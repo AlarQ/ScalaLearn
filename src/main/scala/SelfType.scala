@@ -29,19 +29,19 @@ object SelfType {
 
   // PROBLEM: Diet must be applicable to Persons only
 
-  //  class VegeterianAthlete extends Vegetarian with Adult // enforce at compile time
+//    class VegeterianAthlete extends Vegetarian with Adult // enforce at compile time
 
   // Oprion #1 - enforce suptype relationship, Diet extends Person,
   // then Diet methods can have access to Person elements
   // but it make any sense
 
-  // Option #2 - add type argument
-  //  trait Diet[T <: Person]{
-  //    def canEat(thing: Edible) : Boolean
-  //  }
-  //
-  //  trait Carnivore[T<: Person] extends Diet[T]
-  //  trait Vegetarian[T <: Person] extends Diet[T]
+//   Option #2 - add type argument
+//    trait Diet[T <: Person]{
+//      def canEat(thing: Edible) : Boolean
+//    }
+//
+//    trait Carnivore[T<: Person] extends Diet[T]
+//    trait Vegetarian[T <: Person] extends Diet[T]
 
   // Option #3 = selfType
   // adding selfType to Diet means:

@@ -1,7 +1,7 @@
 import scala.concurrent.{Future, Promise}
 import scala.concurrent.ExecutionContext.Implicits.global
 
-object Futures {
+object  Promises {
 
   // fuutures are inherently non-deterministic
 

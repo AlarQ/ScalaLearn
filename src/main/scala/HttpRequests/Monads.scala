@@ -73,7 +73,7 @@ object Monads extends App {
 
   case class Product(sku: String, price: BigDecimal)
 
-  // external APIs
+  // exte rnal APIs
 
   def getUser(url: String): Future[User] = Future {
     User("Adam") // sample impl
