@@ -3,7 +3,7 @@ package Rock
 import java.util.concurrent.FutureTask
 import scala.concurrent.{Future, Promise}
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.util.{Failure, Success}
+import scala.util.{Failure, Success, Try}
 
 object FuturesAndPromises extends App {
 
@@ -67,7 +67,7 @@ object FuturesAndPromises extends App {
   // 3 - first(fA,fB) - returns a future with first value of two futures
   def first[T](fA: Future[T], fB: Future[T]): Future[T] = {
     val promise = Promise[T]
-    fA.onComplete{
+    fA.onComplete {
       case Success(value) => try {
         promise.success(value)
       } catch {
@@ -75,27 +75,45 @@ object FuturesAndPromises extends App {
       }
       case Failure(value) => try {
         promise.failure(value)
-      }catch {
+      } catch {
         case _ =>
       }
 
     }
 
-    fB.onComplete{
-      case Success(value) =>try{
+    fB.onComplete {
+      case Success(value) => try {
         promise.success(value)
-      }catch {
+      } catch {
         case _ =>
       }
-      case Failure(value) => try{
+      case Failure(value) => try {
         promise.failure(value)
-      }catch {
+      } catch {
         case _ =>
       }
     }
 
     promise.future
   }
+
   // 4 - last(fA,fB)
+  def last[T](fA: Future[T], fB: Future[T]): Future[T] = {
+    // 1 promise which both futures will try to complete
+    // 2 promise which will be fullfilled by last future
+    val bothPromise = Promise[T]
+    val lastPromise = Promise[T]
+
+    def checkAndComplete =  (result: Try[T]) =>
+      if (!bothPromise.tryComplete(result))
+        lastPromise.complete(result)
+
+    fA.onComplete(checkAndComplete)
+    fB.onComplete(checkAndComplete)
+
+    lastPromise.future
+  }
+
+
   // 5 - retRyUntil[T](action: () => Fututre[T], condition: T => Boolean): Future[T] =?
 }
