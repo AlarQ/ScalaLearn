@@ -1,7 +1,7 @@
 package Rock.Implicits
 
 // Type class - a trait that takes a type and describes operations which can be done for that type
-object TypeClasess extends App {
+object TypeClasses extends App {
 
   trait HTMLWritable {
     def toHtml: String

@@ -23,7 +23,7 @@ object PimpMyLibrary extends App {
 
   println("John".encrypt(2))
 
-  // implicit methods - they are discourage
+  // implicit methods - they are discouraged
   implicit def fromStringToInt(str: String): Int = Integer.valueOf(str)
   println("6" / 2)
 

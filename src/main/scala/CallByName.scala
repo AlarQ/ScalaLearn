@@ -56,11 +56,6 @@ object CallByName {
     throw new NullPointerException
   }
 
-  val aFuture = Future {
-    // hard computation for another thread
-    42
-  }
-
   // -----------------------------------------------------
 
 }

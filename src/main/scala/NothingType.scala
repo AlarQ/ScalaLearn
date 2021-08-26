@@ -1,4 +1,4 @@
-object NothingType {
+object  NothingType {
 
   // for every type..
   def giveMeInt() : Int = throw new NoSuchElementException

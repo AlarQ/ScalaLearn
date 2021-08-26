@@ -43,7 +43,7 @@ object JediValuesAkkaStreams {
     val sumFuture: Future[Int] = source.toMat(summingSink)(Keep.right).run()
     sumFuture.foreach(println)
 
-    // once you start stream, no tuurning back
+    // once you start stream, no turning back
     // Jedi values may or may not be connected to the actual elements that go thorough the graph
     // Jedi values can have ANY type
 
