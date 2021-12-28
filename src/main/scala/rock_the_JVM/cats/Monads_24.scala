@@ -3,7 +3,7 @@ package rock_the_JVM.cats
 import cats.Monad
 import cats.implicits.catsSyntaxApplicativeId
 
-object Monads {
+object Monads_24 {
 
   val numbers = List(1, 2, 3)
   val charList = List("a", "b", "c")

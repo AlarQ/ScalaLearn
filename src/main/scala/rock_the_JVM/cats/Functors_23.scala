@@ -3,7 +3,7 @@ package rock_the_JVM.cats
 import cats.Functor
 import cats.implicits.toFunctorOps
 
-object Functors {
+object Functors_23 {
 
   // simplified definition -
   trait MyFunctor[F[_]] {
@@ -21,6 +21,7 @@ object Functors {
   def do10xOption(option: Option[Int]): Option[Int] = option.map(_ + 10)
 
   def do10x[F[_]](container: F[Int])(implicit functor: Functor[F]): F[Int] = functor.map(container)(_ * 10)
+  def do10xShorter[F[_]: Functor](container: F[Int]): F[Int] = container.map(_ * 10)
 
   // another example
   trait Tree[+T]

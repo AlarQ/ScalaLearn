@@ -3,6 +3,7 @@ package rock_the_JVM.akka_essentials.chapter_2
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import rock_the_JVM.akka_essentials.chapter_2.ActorCapabilities_23.CounterActor.{Decrement, Increment, Print}
 
+
 object ActorCapabilities_23 extends App {
   class SimpleActor extends Actor {
     override def receive: Receive = {
@@ -47,7 +48,7 @@ object ActorCapabilities_23 extends App {
   // 4  - if there is no sender, like here, te reply goes to dead letters, sure?
   alice ! "Hi"
 
-  // 5 - forwardi ng messages
+  // 5 - forwarding messages
   case class WirelessPhoneMessage(content: String, ref: ActorRef)
 
   alice ! WirelessPhoneMessage("Hi", bob)

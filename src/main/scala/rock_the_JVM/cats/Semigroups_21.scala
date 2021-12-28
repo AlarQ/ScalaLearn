@@ -3,7 +3,7 @@ package rock_the_JVM.cats
 import cats.Semigroup
 import cats.implicits.catsSyntaxSemigroup
 
-object Semigroups {
+object Semigroups_21 {
 
   // Semigroups COMBINE elements of the same type
   val naturalIntSemigroup = Semigroup[Int]

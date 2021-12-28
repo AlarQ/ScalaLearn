@@ -1,6 +1,6 @@
 package rock_the_JVM.akka_essentials.chapter_4
 
-class Supervision_43 {
+class  Supervision_43 {
 
   //TODO - uzupełnić kod
   /**

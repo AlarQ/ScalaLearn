@@ -2,7 +2,7 @@ package rock_the_JVM.cats
 
 import cats.implicits.catsSyntaxEq
 
-object TCVariance {
+object TCVariance_15 {
   val aComparison: Boolean = Option(2) === Option(3)
   // val invalidComparison = Some(2) === None // compile error, explained later
 
@@ -52,6 +52,7 @@ object TCVariance {
   implicit object CatShow extends AnimalShow[Cat] {
     override def show: String = "Cats everywhere"
   }
+
 
   def organizeShow[T](implicit event: AnimalShow[T]): String = event.show
 

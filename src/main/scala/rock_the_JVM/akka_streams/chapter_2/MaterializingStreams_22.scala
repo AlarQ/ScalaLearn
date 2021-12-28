@@ -11,7 +11,7 @@ import scala.util.{Failure, Success}
 object MaterializingStreams_22 extends App {
 
   /**
-   * - graph - blueprint for a stream\
+   * - graph - blueprint for a stream
    * - running a graph allocates the right resources
    *  - actors, thread pools
    *  - sockets, connections
@@ -21,7 +21,7 @@ object MaterializingStreams_22 extends App {
 
   /**
    * Materialized value
-   * -> Materializing graoh
+   * -> Materializing graph
    */
 
   implicit val system = ActorSystem("materializing")

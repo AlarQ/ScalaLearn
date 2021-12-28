@@ -60,4 +60,21 @@ class ListSpec extends AnyFlatSpec with Matchers {
     list.duplicateEach(3) shouldBe
       1 :: 1 :: 1 :: 2 :: 2 :: 2 :: 3 :: 3 :: 3 :: 4 :: 4 :: 4 :: RNil
   }
+
+  // TODO repeat
+  "rotate method" should "should rotate list by n times" in {
+    list.rotate(3) shouldBe 4 :: 1 :: 2 :: 3 ::RNil
+  }
+
+  "sample method" should "return randomly k elements from list" in {
+    val samples = list.sample(2)
+    println(samples)
+    samples.length shouldBe 2
+  }
+
+  "sorted method" should "sort a list with given ordering" in {
+    val ordering: Ordering[Int] = Ordering.Int
+    val listToSort = 3 :: 1 :: 5 :: 6 :: 2 :: 3 :: RNil
+    listToSort.sorted(ordering) shouldBe 1 :: 2 :: 3 :: 3 :: 5 ::6 :: RNil
+  }
 }

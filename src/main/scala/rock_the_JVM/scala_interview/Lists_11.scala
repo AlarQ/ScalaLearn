@@ -1,6 +1,7 @@
 package rock_the_JVM.scala_interview
 
 import scala.annotation.tailrec
+import scala.util.Random
 
 /**
  * in file lessons: 1.1, 1.2
@@ -27,21 +28,32 @@ sealed abstract class RList[+T] // our list
 
   def ++[S >: T](anotherList: RList[S]): RList[S]
 
-  def remove(index: Int):RList[T]
+  def remove(index: Int): RList[T]
 
-  def map[S](f:T=>S): RList[S]
-  def flatMap[S](f:T=>RList[S]): RList[S]
-  def filter(f: T=>Boolean) : RList[T]
+  def map[S](f: T => S): RList[S]
+
+  def flatMap[S](f: T => RList[S]): RList[S]
+
+  def filter(f: T => Boolean): RList[T]
 
   /**
    * Medium difficulty problems
    */
 
   // run-length encoding
-  def rle: RList[(T,Int)]
+  def rle: RList[(T, Int)]
 
-  def duplicateEach(times:Int):RList[T]
+  def duplicateEach(times: Int): RList[T]
 
+  def rotate(times: Int): RList[T]
+
+  def sample(k: Int): RList[T]
+
+  /**
+   * hard problems
+   */
+
+  def sorted[S >: T](ordering: Ordering[S]): RList[S]
 }
 
 case object RNil extends RList[Nothing] {
@@ -77,6 +89,15 @@ case object RNil extends RList[Nothing] {
   override def rle: RList[(Nothing, Int)] = RNil
 
   override def duplicateEach(times: Int): RList[Nothing] = this
+
+  override def rotate(times: Int): RList[Nothing] = this
+
+  override def sample(k: Int): RList[Nothing] = this
+
+  /**
+   * hard problems
+   */
+  override def sorted[S >: Nothing](ordering: Ordering[S]): RList[S] = this
 }
 
 case class ::[+T](override val head: T, override val tail: RList[T]) extends RList[T] {
@@ -143,49 +164,56 @@ case class ::[+T](override val head: T, override val tail: RList[T]) extends RLi
       if (anotherList.isEmpty) acc
       else concatTailRec(anotherList.tail, anotherList.head :: acc)
     }
+
     concatTailRec(anotherList, this.reverse).reverse
   }
 
   override def remove(index: Int): RList[T] = {
 
     @tailrec
-    def removeTailRec(predecessors: RList[T], remaining:RList[T], index:Int) : RList[T] = {
-      if(remaining.isEmpty) predecessors.reverse
-      else if(index == 0) predecessors.reverse ++ remaining.tail
+    def removeTailRec(predecessors: RList[T], remaining: RList[T], index: Int): RList[T] = {
+      if (remaining.isEmpty) predecessors.reverse
+      else if (index == 0) predecessors.reverse ++ remaining.tail
       else removeTailRec(remaining.head :: predecessors, remaining.tail, index - 1)
     }
 
-    removeTailRec(RNil,this,index)
+    removeTailRec(RNil, this, index)
   }
 
   override def map[S](f: T => S): RList[S] = {
     @tailrec
-    def mapTailRec(remaining:RList[T], acc:RList[S]):RList[S] = {
-      if(remaining.isEmpty) acc.reverse
+    def mapTailRec(remaining: RList[T], acc: RList[S]): RList[S] = {
+      if (remaining.isEmpty) acc.reverse
       else mapTailRec(remaining.tail, f(remaining.head) :: acc)
     }
 
-    mapTailRec(this,RNil)
+    mapTailRec(this, RNil)
   }
 
+  // O(Z^2)
   override def flatMap[S](f: T => RList[S]): RList[S] = {
     @tailrec
-    def flatMapTailrec(remaining:RList[T], acc:RList[S]):RList[S] = {
-      if(remaining.isEmpty) acc.reverse
+    def flatMapTailrec(remaining: RList[T], acc: RList[S]): RList[S] = {
+      if (remaining.isEmpty) acc.reverse
       else flatMapTailrec(remaining.tail, f(remaining.head).reverse ++ acc)
     }
+
+    // TODO
+    def betterFlatMap: RList[S] = ???
+
 
     flatMapTailrec(this, RNil)
   }
 
+
   override def filter(f: T => Boolean): RList[T] = {
     @tailrec
-    def filterTailrec(remaining:RList[T],acc:RList[T]):RList[T] = {
-      if(remaining.isEmpty) acc.reverse
-      else if(f(remaining.head))
+    def filterTailrec(remaining: RList[T], acc: RList[T]): RList[T] = {
+      if (remaining.isEmpty) acc.reverse
+      else if (f(remaining.head))
         filterTailrec(remaining.tail, remaining.head :: acc)
       else
-        filterTailrec(remaining.tail,acc)
+        filterTailrec(remaining.tail, acc)
     }
 
     filterTailrec(this, RNil)
@@ -196,46 +224,82 @@ case class ::[+T](override val head: T, override val tail: RList[T]) extends RLi
    */
   override def rle: RList[(T, Int)] = {
     @tailrec
-    def rleTailRec(remaining:RList[T], currentTuple: (T,Int), duplicateCount:RList[(T,Int)]):RList[(T,Int)] = {
-      if(remaining.isEmpty) duplicateCount.reverse
-      else if(remaining.head == currentTuple._1) {
-        val updateTuple = (remaining.head,currentTuple._2 + 1)
-        rleTailRec(remaining.tail,updateTuple, updateTuple :: duplicateCount.remove(0))
+    def rleTailRec(remaining: RList[T], currentTuple: (T, Int), duplicateCount: RList[(T, Int)]): RList[(T, Int)] = {
+      if (remaining.isEmpty) duplicateCount.reverse
+      else if (remaining.head == currentTuple._1) {
+        val updateTuple = (remaining.head, currentTuple._2 + 1)
+        rleTailRec(remaining.tail, updateTuple, updateTuple :: duplicateCount.remove(0))
       } else {
-        val newTuple = (remaining.head,1)
-        rleTailRec(remaining.tail,newTuple,newTuple :: duplicateCount)
+        val newTuple = (remaining.head, 1)
+        rleTailRec(remaining.tail, newTuple, newTuple :: duplicateCount)
       }
 
-     }
-    rleTailRec(this,(this.head,0),(this.head,0) :: RNil)
-  }
-
-  def rle2: RList[(T,Int)] = {
-    @tailrec
-    def rle2Tailrec(remaining :RList[T], currentTuple: (T,Int), acc: RList[(T,Int)]): RList[(T,Int)] = {
-      if(remaining.isEmpty && currentTuple._2 == 0) acc
-      else if(remaining.isEmpty) currentTuple :: RNil
-      else if(remaining.head == currentTuple._1) rle2Tailrec(remaining.tail,currentTuple.copy(_2 = currentTuple._2+1),acc)
-      else rle2Tailrec(remaining.tail,(remaining.head,1),currentTuple::acc)
     }
 
-    rle2Tailrec(this.tail,(this.head,1),RNil).reverse
+    rleTailRec(this, (this.head, 0), (this.head, 0) :: RNil)
+  }
+
+  def rle2: RList[(T, Int)] = {
+    @tailrec
+    def rle2Tailrec(remaining: RList[T], currentTuple: (T, Int), acc: RList[(T, Int)]): RList[(T, Int)] = {
+      if (remaining.isEmpty && currentTuple._2 == 0) acc
+      else if (remaining.isEmpty) currentTuple :: RNil
+      else if (remaining.head == currentTuple._1) rle2Tailrec(remaining.tail, currentTuple.copy(_2 = currentTuple._2 + 1), acc)
+      else rle2Tailrec(remaining.tail, (remaining.head, 1), currentTuple :: acc)
+    }
+
+    rle2Tailrec(this.tail, (this.head, 1), RNil).reverse
   }
 
   override def duplicateEach(times: Int): RList[T] = {
     @tailrec
-    def duplicateTailRec(remaining:RList[T],timesLeft:Int,acc:RList[T]):RList[T] = {
-      if(remaining.isEmpty) acc
-      else if(timesLeft>0) duplicateTailRec(remaining,timesLeft-1,remaining.head :: acc)
-      else duplicateTailRec(remaining.tail,times,acc)
+    def duplicateTailRec(remaining: RList[T], timesLeft: Int, acc: RList[T]): RList[T] = {
+      if (remaining.isEmpty) acc
+      else if (timesLeft > 0) duplicateTailRec(remaining, timesLeft - 1, remaining.head :: acc)
+      else duplicateTailRec(remaining.tail, times, acc)
     }
 
-    duplicateTailRec(this,times,RNil).reverse
+    duplicateTailRec(this, times, RNil).reverse
   }
-}
+
+  // TODO repeat
+  override def rotate(times: Int): RList[T] = ???
+
+  // O(N * k )
+  override def sample(k: Int): RList[T] = {
+    val random = Random
+
+    @tailrec
+    def sampleTailRec(samplesLeft: Int, acc: RList[T]): RList[T] = {
+      if (samplesLeft == 0) acc
+      else sampleTailRec(samplesLeft - 1, this (random.nextInt(this.length)) :: acc)
+    }
+
+    sampleTailRec(k, RNil)
+  }
+
+  /**
+   * hard problems
+   */
+  override def sorted[S >: T](ordering: Ordering[S]): RList[S] = {
+    @tailrec
+    def sortedTailRec(remaining: RList[S], acc: RList[S]): RList[S] = {
+      if (remaining.isEmpty) acc
+      else sortedTailRec(remaining.tail, insertTailRec(remaining.head, RNil, acc))
+    }
+
+    def insertTailRec(elem: S, front: RList[S], back: RList[S]): RList[S] = {
+      if (back.isEmpty || ordering.compare(elem, back.head) <= 0) appendToFront(front, elem) ++ back
+      else insertTailRec(elem, appendToFront(front, back.head), back.tail)
+    }
+
+    def appendToFront(front: RList[S], elem: S) = {
+      if (front.isEmpty) elem :: front
+      else (elem :: front.reverse).reverse
+    }
 
 
-object Lists_11 extends App {
-  // acceptable
-  println(2 :: RNil)
+    sortedTailRec(this, RNil)
+  }
+
 }

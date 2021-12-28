@@ -6,11 +6,11 @@ object ImplicitsIntro extends App {
   val pair = "Adam" -> "222"
   val intPair = 12 -> 23
 
+  // ------------------------ IMPLICIT CONVERSION --------------------------
   case class Person(name: String) {
     def greet = s"Hi, my name is $name"
   }
 
-  // ------------------------ IMPLICIT CONVERSION --------------------------
   implicit def fromStringToPerson(str: String): Person = Person(str)
   // compiler look for a implicit class or method which can wrap the string and call method greet
   println("Peter".greet) // rewritten to println(fromStringToPerson("Peter").greet)

@@ -3,20 +3,20 @@ package rock_the_JVM.cats
 import cats.Eq
 import cats.implicits.catsSyntaxEq
 
-object CatsIntro extends App {
+object CatsIntro_14 extends App {
 
   /**
    * Here we have important imports needed when using cats
    * I'm not sure if they are still needed in newer versions of cats
    */
   // wrong - will trigger compiler warning
-  // val aComparison = 2 == "a string"
-
+   val aComparison = 2 == "a string"
+  println(aComparison)
   // #1 - typeClass import
   //import cats.Eq
 
   // #2 - import TC instances fo type you need
-  //  import cats.instances.int
+    import cats.instances.int
 
   // #3 - use TC API
   val intEquality: Eq[Int] = Eq[Int]

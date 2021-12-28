@@ -24,7 +24,6 @@ object ChildActors_29 extends App {
 
     def withChild(childRef: ActorRef): Receive = {
       case TellChild(message) => childRef forward message
-
     }
   }
 

@@ -4,7 +4,7 @@ import cats.implicits.catsSyntaxSemigroup
 import cats.kernel.Monoid
 
 
-object Monoids {
+object Monoids_22 {
   val numbers = (1 to 1000).toList
   // |+| is always associative
   val someLeft = numbers.foldLeft(0)(_ |+| _)

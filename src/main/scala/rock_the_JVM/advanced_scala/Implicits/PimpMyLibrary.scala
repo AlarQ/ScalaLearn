@@ -28,7 +28,7 @@ object PimpMyLibrary extends App {
   println("6" / 2)
 
   // Danger zone
-  implicit def fromInttoBoolean(int: Int) : Boolean = int == 1
+  implicit def fromIntoBoolean(int: Int) : Boolean = int == 1
   val aConditionValue = if (3) "Ok" else "something wrong"
   println(aConditionValue) // hard to find a bug in code
 }

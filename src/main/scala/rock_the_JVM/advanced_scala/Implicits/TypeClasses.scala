@@ -132,7 +132,7 @@ object TypeClasses extends App {
   // TYPE SAFE
   //  println(tom === 2)
 
-  // context bounds
+  // ---------------- CONTEXT BOUNDS ----------------
   def boilerPlate[T](content: T)(implicit serializer: HTMLSerializer[T]): String =
     s"html: ${content.toHTML(serializer)}"
 
@@ -145,6 +145,6 @@ object TypeClasses extends App {
   implicit val defaultPermissions: Permissions = Permissions("0744")
 
   // in some other part of the code we want to see what sits in defaultPermissions
-  val stabdardPerms = implicitly[Permissions]
-
+  val standardPerms = implicitly[Permissions]
+  println(s"Standard perms: $standardPerms")
 }

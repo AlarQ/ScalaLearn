@@ -56,7 +56,7 @@ object FuturesAndPromises extends App {
 
   // EXERCISE
   // 1 - fulfill a future immediately with a value
-  def fulfillImediately[T](value: T): Future[T] = Future(value)
+  def fulfillImmediately[T](value: T): Future[T] = Future(value)
 
   // 2 - inSequence(futureA, futureB) = run fb if fa is fulfilled
   def inSequence[A, B](futureA: Future[A], futureB: Future[B]): Future[B] = {
@@ -99,7 +99,7 @@ object FuturesAndPromises extends App {
   // 4 - last(fA,fB)
   def last[T](fA: Future[T], fB: Future[T]): Future[T] = {
     // 1 promise which both futures will try to complete
-    // 2 promise which will be fullfilled by last future
+    // 2 promise which will be fulfilled by last future
     val bothPromise = Promise[T]
     val lastPromise = Promise[T]
 
