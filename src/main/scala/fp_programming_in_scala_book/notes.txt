@@ -1,0 +1,14 @@
+pure function
+referential transparency
+polymorphic function
+partial application
+curring
+data sharing
+Exceptions are not RT, they are context dependent
+lifting functions
+NonStrictness / Laziness
+separation of concerns
+QUILL / SCAR
+
+state actions, state transitions - functions describing changing of object state
+e.g RNG => (A,RNG)

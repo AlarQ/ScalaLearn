@@ -4,10 +4,10 @@ version := "0.1"
 
 scalaVersion := "2.13.4"
 
-val akkaVersion = "2.6.12"
-val akkaHttpVersion = "10.1.11"
+val akkaVersion = "2.6.18"
+val akkaHttpVersion = "10.2.6"
 
-libraryDependencies += "org.typelevel" %% "cats-core" % "2.6.1"
+libraryDependencies += "org.typelevel" %% "cats-core" % "2.7.0"
 lazy val scalacheck = "org.scalacheck" %% "scalacheck" % "1.15.4"
 libraryDependencies += scalacheck % Test
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % Test
@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
 
 
 "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
-  "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "ch.qos.logback" % "logback-classic" % "1.2.10",
 
 )
 
@@ -34,4 +34,14 @@ libraryDependencies ++= Seq(
   "io.circe" %% "circe-core" % "0.14.1",
   "io.circe" %% "circe-generic" % "0.14.1",
   "io.circe" %% "circe-parser" % "0.14.1"
+)
+
+val DoobieVersion = "1.0.0-RC1"
+val NewTypeVersion = "0.4.4"
+
+libraryDependencies ++= Seq(
+  "org.tpolecat" %% "doobie-core"     % DoobieVersion,
+  "org.tpolecat" %% "doobie-postgres" % DoobieVersion,
+  "org.tpolecat" %% "doobie-hikari"   % DoobieVersion,
+  "io.estatico"  %% "newtype"         % NewTypeVersion
 )
