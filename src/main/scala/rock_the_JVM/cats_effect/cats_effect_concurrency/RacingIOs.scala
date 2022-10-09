@@ -1,6 +1,6 @@
 package rock_the_JVM.cats_effect.cats_effect_concurrency
 
-import cats.effect.kernel.Outcome
+import cats.effect.kernel.Outcome.{Canceled, Errored, Succeeded}
 import cats.effect.{FiberIO, IO, IOApp, OutcomeIO}
 import rock_the_JVM.cats_effect.utils.DebugWrapper
 
@@ -57,8 +57,8 @@ object RacingIOs extends IOApp.Simple {
 
   /** Exxercises:
    * 1 - implement a timeout pattern with race
-   * TODO
    * 2 - a method to return a losing effect from race
+   * 3 - implement race in terms of race pair
    */
 
 
@@ -72,11 +72,49 @@ object RacingIOs extends IOApp.Simple {
   }
 
   // #2
-  def urnace[A,B](ioa : IO[A], iob: IO[B]):IO[Either[A,B]] = ???
-  val importantTask = IO.sleep(2 seconds) >> IO(42).debug
-  val testTimeout = timeout(importantTask, 1 second)
-  // we can use cats effect
-  val testTimeout_V2 = importantTask.timeout(1 second)
+//  def urnace[A, B](ioa: IO[A], iob: IO[B]): IO[Either[A, B]] = {
+//    val raceResult = IO.racePair(ioa, iob)
+//    raceResult.flatMap {
+//      case Left((_, fibB)) => fibB.join.flatMap {
+//        case Succeeded(resultEffect) => resultEffect.map(Right(_))
+//        case Errored(e) => IO.raiseError(e)
+//        case Canceled() => IO.raiseError(new RuntimeException("Loser canceled"))
+//      }
+//      case Right((fibA, _)) => fibA.join.flatMap {
+//        case Succeeded(resultEffect) => resultEffect.map(Right(_))
+//        case Errored(e) => IO.raiseError(e)
+//        case Canceled() => IO.raiseError(new RuntimeException("Loser canceled"))
+//      }
+//    }}
 
-  override def run: IO[Unit] = testTimeout.debug.void
-}
+    // #3
+    def simpleRace[A, B](ioa: IO[A], iob: IO[B]): IO[Either[A, B]] =
+      IO.racePair(ioa, iob).flatMap {
+        case Left((outA, fibB)) => outA match {
+          case Succeeded(effectA) => fibB.cancel >> effectA.map(a => Left(a))
+          case Errored(e) => fibB.cancel >> IO.raiseError(e)
+          case Canceled() => fibB.join.flatMap {
+            case Succeeded(effectB) => effectB.map(b => Right(b))
+            case Errored(e) => IO.raiseError(e)
+            case Canceled() => IO.raiseError(new RuntimeException("Both computations canceled."))
+          }
+        }
+        case Right((fibA, outB)) => outB match {
+          case Succeeded(effectB) => fibA.cancel >> effectB.map(b => Right(b))
+          case Errored(e) => fibA.cancel >> IO.raiseError(e)
+          case Canceled() => fibA.join.flatMap {
+            case Succeeded(effectA) => effectA.map(a => Left(a))
+            case Errored(e) => IO.raiseError(e)
+            case Canceled() => IO.raiseError(new RuntimeException("Both computations canceled."))
+          }
+        }
+      }
+
+
+    val importantTask = IO.sleep(2 seconds) >> IO(42).debug
+    val testTimeout = timeout(importantTask, 1 second)
+    // we can use cats effect
+    val testTimeout_V2 = importantTask.timeout(1 second)
+
+    override def run: IO[Unit] = testTimeout.debug.void
+  }

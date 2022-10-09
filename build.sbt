@@ -12,10 +12,9 @@ lazy val scalacheck = "org.scalacheck" %% "scalacheck" % "1.15.4"
 libraryDependencies += scalacheck % Test
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % Test
 libraryDependencies ++= Seq(
-  // akka streams
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
-  // akka http
+  // akka
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
 
