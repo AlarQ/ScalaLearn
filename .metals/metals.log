@@ -1,0 +1,258 @@
+2022.08.02 12:37:46 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\projects\ScalaLearn\.metals\lsp.trace.json or C:\Users\bedna\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.08.02 12:37:46 INFO  logging to file D:\projects\ScalaLearn\.metals\metals.log
+2022.08.02 12:37:46 INFO  Started: Metals version 0.11.7 in workspace 'D:\projects\ScalaLearn' for client Visual Studio Code 1.69.1.
+2022.08.02 12:37:47 INFO  time: initialize in 1.06s
+2022.08.02 12:37:47 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.08.02 12:37:47 WARN  Build server is not auto-connectable.
+2022.08.02 12:51:06 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDDemo.scala
+2022.08.02 12:51:10 INFO  no build target found for D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDDemo.scala. Using presentation compiler with project's scala-library version: 3.1.3
+2022.08.02 12:51:11 INFO  time: code lens generation in 1.72s
+2022.08.02 12:51:11 INFO  time: code lens generation in 4.65s
+2022.08.02 12:51:15 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDDemo.scala
+2022.08.02 12:51:32 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:51:48 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:51:49 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:51:51 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:51:55 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:51:56 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:51:59 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:52:02 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:52:05 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:52:10 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:52:19 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:52:21 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:52:25 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:52:29 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 12:52:33 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:01:18 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:02:35 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:02:37 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:02:38 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:02:41 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:02:43 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:02:45 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:02:56 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:03:11 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:03:14 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:03:18 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:03:30 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:03:40 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+sie 02, 2022 1:03:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 447
+2022.08.02 13:03:51 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:04:01 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:04:02 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:04:07 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:04:09 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:04:18 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:04:20 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:04:52 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:04:57 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:00 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:08 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:11 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:12 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:23 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:26 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:28 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:30 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+sie 02, 2022 1:05:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: bad parameter reference Wrapper at typer
+the parameter is type Wrapper in trait Language but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = List()
+dotty.tools.dotc.core.TypeError: bad parameter reference Wrapper at typer
+the parameter is type Wrapper in trait Language but the prefix <noprefix>
+does not define any corresponding arguments.
+idx = 0, args = List()
+	at dotty.tools.dotc.core.Types$NamedType.argDenot(Types.scala:2329)
+	at dotty.tools.dotc.core.Types$NamedType.fromDesignator$1(Types.scala:2243)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2261)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2216)
+	at dotty.tools.dotc.core.Types$NamedType.info(Types.scala:2204)
+	at dotty.tools.dotc.core.Types$TypeRef.underlying(Types.scala:2702)
+	at dotty.tools.dotc.core.Types$TypeProxy.superType(Types.scala:1944)
+	at dotty.tools.dotc.core.Types$Type.classSymbol(Types.scala:498)
+	at dotty.tools.dotc.transform.TypeUtils$.tupleArity(TypeUtils.scala:59)
+	at dotty.tools.dotc.printing.RefinedPrinter.appliedText$1(RefinedPrinter.scala:221)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText$$anonfun$1(RefinedPrinter.scala:232)
+	at dotty.tools.dotc.printing.MessageLimiter.controlled(MessageLimiter.scala:23)
+	at dotty.tools.dotc.printing.PlainPrinter.controlled(PlainPrinter.scala:36)
+	at dotty.tools.dotc.printing.RefinedPrinter.toText(RefinedPrinter.scala:298)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.toText(DotcPrinter.scala:83)
+	at scala.meta.internal.pc.printer.DotcPrinter$Std.tpe(DotcPrinter.scala:41)
+	at scala.meta.internal.pc.printer.MetalsPrinter.tpe(MetalsPrinter.scala:75)
+	at scala.meta.internal.pc.printer.MetalsPrinter.paramLabel(MetalsPrinter.scala:347)
+	at scala.meta.internal.pc.printer.MetalsPrinter.$anonfun$3(MetalsPrinter.scala:185)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1$$anonfun$1(MetalsPrinter.scala:188)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.printer.MetalsPrinter.label$1(MetalsPrinter.scala:193)
+	at scala.meta.internal.pc.printer.MetalsPrinter.defaultMethodSignature(MetalsPrinter.scala:196)
+	at scala.meta.internal.pc.printer.MetalsPrinter.hoverSymbol(MetalsPrinter.scala:101)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2022.08.02 13:05:33 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:35 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:39 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:05:41 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:07:21 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:07:33 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:07:42 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:07:49 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:07:55 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:07:57 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:08:00 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:08:06 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:08:44 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:08:47 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:09:33 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:09:44 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:10:07 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:10:11 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:10:21 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:10:23 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:10:25 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:10:27 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:10:38 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:10:42 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:16:18 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:18:29 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:18:41 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:18:42 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:28:46 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:28:47 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:29:50 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:30:35 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:30:37 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:30:38 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:30:40 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:30:43 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:30:47 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:30:50 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+sie 02, 2022 1:31:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1241
+2022.08.02 13:33:12 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:33:13 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:33:23 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:34:03 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:34:11 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:34:15 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:34:23 INFO  Attempting to connect to the build server...
+2022.08.02 13:34:23 INFO  Setting up current java home C:\Program Files\Java\jdk1.8.0_281\ in C:\Users\bedna\.bloop\bloop.json
+2022.08.02 13:34:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\projects\ScalaLearn\.metals\bsp.trace.json or C:\Users\bedna\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.08.02 13:34:32 INFO  time: Connected to build server in 10s
+2022.08.02 13:34:32 INFO  Connected to Build server: Bloop v1.5.2
+2022.08.02 13:34:33 ERROR Empty build targets. Expected at least one build target identifier.
+2022.08.02 13:34:33 ERROR Empty build targets. Expected at least one build target identifier.
+2022.08.02 13:34:33 ERROR Empty build targets. Expected at least one build target identifier.
+2022.08.02 13:34:33 ERROR Empty build targets. Expected at least one build target identifier.
+2022.08.02 13:34:33 INFO  time: indexed workspace in 0.35s
+2022.08.02 13:34:33 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:34:34 INFO  no build target found for D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala. Using presentation compiler with project's scala-library version: 3.1.3
+2022.08.02 13:34:40 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:38:27 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:39:30 ERROR scalafmt: D:\projects\ScalaLearn\.scalafmt.conf: missing setting 'version'. To fix this problem, add the following line to .scalafmt.conf: 'version=3.5.3'.
+2022.08.02 13:39:33 INFO  scalafmt: no version provided for .scalafmt.conf
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.5.3/scalafmt-core_2.13-3.5.3.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.5.3/scalafmt-core_2.13-3.5.3.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.5.3/scalafmt-sysops_2.13-3.5.3.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.5.5/scalameta_2.13-4.5.5.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.5.3/scalafmt-config_2.13-3.5.3.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.5.3/scalafmt-sysops_2.13-3.5.3.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.5.3/scalafmt-config_2.13-3.5.3.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.5.5/scalameta_2.13-4.5.5.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.10.0/metaconfig-typesafe-config_2.13-0.10.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.5.5/parsers_2.13-4.5.5.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.5.5/parsers_2.13-4.5.5.pom
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.10.0/metaconfig-typesafe-config_2.13-0.10.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.5.5/trees_2.13-4.5.5.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.5.5/trees_2.13-4.5.5.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.5.5/common_2.13-4.5.5.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.5.5/common_2.13-4.5.5.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/geny_2.13/0.6.5/geny_2.13-0.6.5.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.2.7/sourcecode_2.13-0.2.7.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.2.7/sourcecode_2.13-0.2.7.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/geny_2.13/0.6.5/geny_2.13-0.6.5.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/geny_2.13/0.6.5/geny_2.13-0.6.5.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.5.3/scalafmt-core_2.13-3.5.3.jar
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.10.0/metaconfig-typesafe-config_2.13-0.10.0.jar
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.2.7/sourcecode_2.13-0.2.7.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.5.3/scalafmt-config_2.13-3.5.3.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.5.5/scalameta_2.13-4.5.5.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.5.3/scalafmt-config_2.13-3.5.3.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.5.5/parsers_2.13-4.5.5.jar
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.10.0/metaconfig-typesafe-config_2.13-0.10.0.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.5.5/common_2.13-4.5.5.jar
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/geny_2.13/0.6.5/geny_2.13-0.6.5.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.5.5/trees_2.13-4.5.5.jar
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.2.7/sourcecode_2.13-0.2.7.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.5.3/scalafmt-sysops_2.13-3.5.3.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.5.3/scalafmt-sysops_2.13-3.5.3.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.5.5/parsers_2.13-4.5.5.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.5.5/scalameta_2.13-4.5.5.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.5.3/scalafmt-core_2.13-3.5.3.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.5.5/common_2.13-4.5.5.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.5.5/trees_2.13-4.5.5.jar
+2022.08.02 13:40:51 ERROR scalafmt: D:\projects\ScalaLearn\.scalafmt.conf: Invalid config: D:\projects\ScalaLearn\.scalafmt.conf:5:0 error: found option 'unindentTopLevelOperators' which wasn't expected, or isn't valid in this context.
+unindentTopLevelOperators  = true
+^
+
+2022.08.02 13:41:15 ERROR scalafmt: D:\projects\ScalaLearn\.scalafmt.conf: Invalid config: Presets$: top-level presets removed since v3.0.0; use 'danglingParentheses.preset = true' instead
+2022.08.02 13:41:38 ERROR scalafmt: D:\projects\ScalaLearn\.scalafmt.conf: Invalid config: Default dialect is deprecated; use explicit: [sbt0137,sbt1,scala211,scala212,scala212source3,scala213,scala213source3,scala3]
+Also see https://scalameta.org/scalafmt/docs/configuration.html#scala-dialects"
+
+2022.08.02 13:42:13 ERROR scalafmt: D:\projects\ScalaLearn\.scalafmt.conf: Invalid config: D:\projects\ScalaLearn\.scalafmt.conf:7:0 error: found option 'dialect' which wasn't expected, or isn't valid in this context.
+dialect=scala213
+^
+
+2022.08.02 13:42:59 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:43:13 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:43:17 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:43:21 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:43:22 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:43:29 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:45:01 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:45:04 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:45:14 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:45:19 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:45:40 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:46:23 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 13:59:19 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:04:29 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:04:38 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:04:42 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:04:44 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:04:48 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:04:51 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:04:54 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:04:57 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:05:00 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:05:05 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:05:54 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:06:00 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:06:02 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:06:03 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:06:05 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:06:08 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:06:10 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:08:02 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:08:05 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:14:40 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:17:24 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:17:24 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 14:17:47 WARN  no build target for: D:\projects\ScalaLearn\src\main\scala\tagless_final\TaglessFinalDemo.scala
+2022.08.02 19:05:24 INFO  shutting down Metals
+2022.08.02 19:05:24 INFO  Shut down connection with build server.
+2022.08.02 19:05:24 ERROR Unexpected error initializing serverorg.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
